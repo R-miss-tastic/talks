@@ -1,0 +1,77 @@
+---
+title: "R Miss Tastic"
+subtitle: "UseR! 2018 - Brisbane"
+author: "Nicholas Tierney, Julie Josse, Nathalie Vialaneix"
+date: "Friday 13th July, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse, center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(dev = "png",
+                      dpi = 300,
+                      fig.width = 6, 
+                      fig.height = 4, 
+                      out.width="80%",
+                      fig.align = "center",
+                      echo = TRUE,
+                      cache = TRUE)
+
+library(tidyverse)
+library(visdat)
+library(naniar)
+library(leaflet)
+library(ggplot2)
+
+```
+
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+mono_accent(
+  base_color = "#308bd2",
+  header_font_google = google_font("Josefin Sans"),
+  inverse_background_color = "#d29430",
+  inverse_header_color = "white",
+  text_bold_color = "#d24330",
+  inverse_text_color = "white",
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
+)
+```
+
+```{r}
+# 
+# .vvhugeo { font-size: 500%; color:#ffa500; orange}
+# .vvhugew { font-size: 500%; color:#ffffff; white}
+# .vhugeo { font-size: 250%; color:#ffa500; orange}
+# .vhugew { font-size: 250%; color:#ffffff; white}
+# .vhugeb { font-size: 250%; color:#000000; black}
+# .hugeo { font-size: 180%; color:#ffa500; orange}
+# .hugew { font-size: 180%; color: #ffffff; white}
+# .hugeb { font-size: 180%; color:#000000; black}
+# .large { font-size: 130%;}
+# .small { font-size: 70%;}
+
+```
+
+
+# Motivation
+
+
+
+<!-- # https://i.imgur.com/qTFV3E7.gifv # GOLFER  -->
+<!-- # https://i.imgur.com/NrOpM05.gifv # bag throw into bin -->
+<!-- # https://i.imgur.com/ujOtU7a.gifv # gold bottle opener -->
+<!-- # https://i.imgur.com/5q1Ro4p.gifv # dart into arm -->
+<!-- # https://imgur.com/PviKkgC # 4 strangers outfits -->
